@@ -44,3 +44,4 @@ Thumbs.db
 /.vs/slnx.sqlite
 /.vs/ProjectSettings.json
 /.vs/Pantheon/v15/.suo
+/src/Pantheon.UI/e2e

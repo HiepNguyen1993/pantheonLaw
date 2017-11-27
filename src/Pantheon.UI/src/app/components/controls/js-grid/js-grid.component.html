@@ -1,0 +1,16 @@
+<div *ngIf="_options.fakeGridTitle" style="margin-left: 10px; margin-bottom: 10px;" class="visible-print-block row">
+  <img src="assets/img/logo3.png" />
+  <span style="font-size: 25px;font-weight: 600">{{_options.fakeGridTitle}}</span>
+</div>
+<!-- <button *ngIf="_options.excel" (click)="exportExcel($event)" class="btn hidden-print btn-p-print btn-success btn-fill btn-sm pull-right" type="button">
+                   <i class="fa fa-file-excel-o"></i> {{'Export Excel' | translate}}</button> -->
+<div *ngIf="_options.excel">
+  <a (click)="exportExcel($event)" class="btn btn-primary btn-md pull-right">
+    <i class="fa fa-file-excel-o"></i> {{'Export Excel' | translate}}</a>
+</div>
+<button *ngIf="_options.printButton" (click)="printThisOne($event)" class="btn hidden-print btn-p-print btn-primary btn-fill btn-sm pull-right"
+  type="button">
+  <i class="fa fa-print"></i>{{'Print' | translate}}</button>
+<div class="this-is-grid"></div>
+<div class="visible-print-block fake-grid"></div>
+<div class="visible-print-block fake-grid" id="fake-jsgrid" style="display:none;"></div>
