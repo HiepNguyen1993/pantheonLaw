@@ -13,7 +13,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/map';
-import { Common } from 'app/common/common';
+import { Common } from '../../app/common/common';
 
 @Injectable()
 
@@ -67,7 +67,7 @@ export class HttpService implements IHttpService {
 
             switch (error.status) {
                 case 0:
-                  // Common.throwErrorOrBadRequest('Your back-end server might not be available!'); 
+                  // Common.throwErrorOrBadRequest('Your back-end server might not be available!');
                   break;
                 case 500:
                     const token_expire_time = this._authService.getToken('token_expire');

@@ -1,4 +1,3 @@
-import * as $ from 'jquery';
 export class Alerts {
     public static async notify(message: string, icon = 'fa fa-close', type = 'info', timer = 400, title = '') {
         require.ensure([], (require) => {
