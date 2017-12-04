@@ -5,7 +5,7 @@ import { SUPPORTED_LANGUAGES } from './languages.list';
 import { capitalize, upperCase } from 'lodash';
 import { ValueUrl } from '../shared/urls/values.url';
 import { LanguageModel } from './@models/language.model';
-import { HttpService } from 'core';
+import { HttpService } from '../../core/index';
 
 @Injectable()
 export class TranslateService {

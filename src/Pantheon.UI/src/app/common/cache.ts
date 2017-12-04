@@ -1,6 +1,6 @@
 import { DateTimeUtil } from '../common/utilities';
 import { isArray } from 'lodash';
-import { EncryptionService } from 'app/shared/services/encryption.service';
+import { EncryptionService } from '../shared/services/encryption.service';
 
 export class Cache {
     public static _preffix = '__c_';

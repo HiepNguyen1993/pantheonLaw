@@ -2,9 +2,9 @@ import { Alerts } from './alerts';
 import { Utilities } from './utilities';
 import { NotifyType, Constants } from './const';
 import { FormGroup, FormControl } from '@angular/forms';
-import { mailFormat } from 'core/validators/mail.format';
 import { filter, find } from 'lodash';
 import { WebCore } from '../../site';
+import { mailFormat } from '../../core/index';
 
 declare var ExcellentExport: any, __Module: any, moment: any;
 

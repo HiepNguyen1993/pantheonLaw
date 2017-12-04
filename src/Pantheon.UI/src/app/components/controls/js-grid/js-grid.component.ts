@@ -2,12 +2,11 @@ import { filter } from 'lodash';
 import { Title } from '@angular/platform-browser';
 import { _translations } from './../../../translate/translations';
 import { element } from 'protractor';
-import { TranslateService } from 'app/translate';
-import { PageModel } from 'app/common/models';
 import { PageResponse } from './../../../common/models';
 import { Component, OnInit, AfterViewInit, Input, Output, EventEmitter, ElementRef, OnChanges } from '@angular/core';
-import { Common } from '../../../common/index';
+import { Common, PageModel } from '../../../common/index';
 import { HttpService } from '../../../../core';
+import { TranslateService } from '../../../translate/translate.service';
 
 @Component({
   selector: 'p-jsgrid',

@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit, Input, EventEmitter, Output, ElementRef, forwardRef } from '@angular/core';
-import { SelectItem } from 'app/components/controls/select2/select-item';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { SelectItem } from './select-item';
 // import * as $ from 'jquery';
 // import 'select2/dist/css/select2.css';
 

@@ -12,6 +12,7 @@ import { LanguageService } from './services/language.service';
 // common component
 import { Select2Component } from '../components/controls/select2/select2.component';
 import { JsGridComponent } from '../components/controls/js-grid/js-grid.component';
+import { DtpickerComponent } from '../components/controls/dtpicker/dtpicker.component';
 
 // common directive
 import { DecimalNumbericDirective } from './directives/decimal-numberic.directive';
@@ -20,6 +21,7 @@ import { DisabledAllDirective } from './directives/disabled-all.directive';
 
 // common Service
 import { SharingService } from './services/sharing.service';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { SharingService } from './services/sharing.service';
         OnlyNumberDirective,
         DisabledAllDirective,
         JsGridComponent,
-        Select2Component
+        Select2Component,
+        DtpickerComponent
     ],
     exports: [
         CommonModule,
