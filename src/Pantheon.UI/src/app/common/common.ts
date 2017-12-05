@@ -58,16 +58,6 @@ export class Common {
         return forInput ? intlValue.replace(/\./, '') : intlValue;
     }
 
-    public static cleanObject(obj: any) {
-        const cloneObj = {};
-        Object.keys(obj).forEach(prop => {
-            if (obj[prop] !== null && obj[prop] !== undefined) {
-                cloneObj[prop] = obj[prop];
-            }
-        });
-        return cloneObj;
-    }
-
     public static onFormValueChanged(form: FormGroup, formErrors: any, validationMessages: any, data?: any) {
         if (!form) { return; }
         for (const field in formErrors) {
@@ -83,22 +73,6 @@ export class Common {
                         }
                     }
                 }
-            }
-        }
-    }
-
-    public static updateFormValuesToModel(obj: any, form: FormGroup) {
-        for (const control in form.controls) {
-            if (control && obj.hasOwnProperty(control)) {
-                obj[control] = form.controls[control].value;
-            }
-        }
-    }
-
-    public static setFormControlValues(obj: any, form: FormGroup) {
-        for (const prop in obj) {
-            if (obj.hasOwnProperty(prop) && form.controls[prop]) {
-                Common.setFormValue(form, prop, obj[prop]);
             }
         }
     }
@@ -124,78 +98,8 @@ export class Common {
         (<FormControl>form.controls[ctlName]).setValue(value, { onlySelf: true });
     }
 
-    public static NoWhitespaceValidator(control: FormControl) {
-        const isWhitespace = (control.value || '').trim().length === 0;
-        const isValid = !isWhitespace;
-        return isValid ? null : { 'whitespace': true };
-    }
-
     public static createExcelFile(anchor = window, data, sheetName = 'Sheet1', fileName = 'export.xls') {
         return ExcellentExport.excel(anchor, data, sheetName, fileName);
     }
 
-    public static async ValidateEmailFromForm(control: FormGroup, data: any) {
-        let success = true;
-        await data.forEach(element => {
-            if (control.controls[element.column].value) {
-                const check = mailFormat(control.controls[element.column]);
-                if (check) {
-                    Alerts.errorNotify(element.name + ' invalid email format!');
-                    success = false;
-                    return;
-                }
-            }
-        });
-        return success;
-    }
-
-    // activatedRoute : typeof(ActivatedRoute)
-    public static setStateSideBar($childElem) {
-        $('.current-action').removeClass('current-action');
-        $childElem.addClass('current-action');
-    }
-
-    public static _makeTree = (options) => {
-        const id = options.id || 'elementId';
-        const pid = options.parentid || 'parentElementId';
-        const children = options.children || 'children';
-        const temp = {};
-        const result = [];
-        const _ref = options.data || options;
-        const root = filter(_ref, item => item.type === 0);
-
-        for (const item of root) {
-            result.push(Common.loadTreeNode(item, _ref));
-        }
-        return result;
-    }
-
-    static loadTreeNode(node, tree) {
-        const parentNodeId = node.elementId;
-        const childArrays = [];
-        for (let item of tree) {
-            if (item.parentElementId === node.elementId) {
-                item = this.loadTreeNode(item, tree);
-                childArrays.push(item);
-            }
-        }
-        node.children = childArrays;
-        return node;
-    }
-
-    public static isAdmin() {
-        if (localStorage.getItem('user_info')
-            && JSON.parse(localStorage.getItem('user_info')).access_token
-            && JSON.parse(JSON.parse(localStorage.getItem('user_info')).userProfile).userRole === 0
-        ) {
-            return true;
-        }
-        return false;
-    }
-
-    public static showRightNavigation() {
-        $('.right-sidebar-toggle').click(function () {
-            $('#right-sidebar').toggleClass('sidebar-open');
-        });
-    }
 }

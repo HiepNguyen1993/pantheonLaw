@@ -1,0 +1,83 @@
+﻿@font-face {
+    font-family: "Palatino Linotype";
+    src: url('/fonts/Palatino Linotype.ttf') format("truetype");
+}
+
+html, body {
+    font-family: "Palatino Linotype", "Open Sans", sans-serif, Verdana, Tahoma;
+}
+
+.mod-languages img {
+    width: 20px;
+    height: 14px;
+}
+
+.mod-languages .lang-active img {
+    border: thin white solid !important;
+}
+
+.ublog .item-image {
+    text-align: center;
+}
+
+    .ublog .item-image img {
+        height: 203px;
+    }
+
+.ublog .item {
+    height: 507px;
+}
+
+#loading-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 999999;
+    background-image: url('/images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 64px 64px;
+}
+
+.contact-me-small {
+    color: #ddd;
+    text-align: left;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+    .contact-me-small .contact-me-small-email {
+        height: 26px;
+    }
+
+    .contact-me-small .contact-me-small-phone {
+        height: 34px;
+    }
+
+    .contact-me-small i {
+        color: #ddd;
+    }
+
+#t3-mainnav .navbar-header .off-canvas-toggle {
+    color: #449edd;
+    background-color: ghostwhite;
+}
+
+#t3-mainnav .logo-image a {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}

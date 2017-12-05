@@ -1,0 +1,3 @@
+﻿function initPage_Product() {
+
+}

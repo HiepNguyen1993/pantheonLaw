@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.1" />
+    <PackageReference Include="AutoMapper.Extensions" Version="1.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.1" />
+    <PackageReference Include="mongocsharpdriver" Version="2.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.Api.deps.json
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.Api.runtimeconfig.json
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.Api.runtimeconfig.dev.json
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.Api.dll
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.Api.pdb
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.csprojResolveAssemblyReference.cache
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.csproj.CoreCompileInputs.cache
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.AssemblyInfoInputs.cache
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.AssemblyInfo.cs
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.dll
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\obj\Debug\netcoreapp2.0\Pantheon.Api.pdb
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.AppService.dll
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.Api\bin\Debug\netcoreapp2.0\Pantheon.AppService.pdb

@@ -20,10 +20,35 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../src/assets/css/site.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+        "../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+        "../src/assets/css/system.css",
+        "../src/assets/css/home.css",
+        "../src/assets/css/about.css",
+        "../src/assets/css/service.css",
+        "../src/assets/css/management/lib/rickshaw.css",
+        "../src/assets/css/management/lib/morris.core.css",
+        "../src/assets/css/management/lib/materialadmin.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.min.js"
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../src/assets/js/system.js",
+        "../src/assets/js/site.js",
+        "../src/assets/js/service.js",
+        "../src/assets/js/mailing-list.js",
+        "../src/assets/js/jquery.sticky.js",
+        "../src/assets/js/home.js",
+        "../src/assets/js/contact.js",
+        "../src/assets/js/config.js",
+        "../src/assets/js/common.js",
+        "../src/assets/js/bootstrap-notify.js",
+        "../src/assets/js/blog.js",
+        "../src/assets/js/blog-post.js",
+        "../src/assets/js/about.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

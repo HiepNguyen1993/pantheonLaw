@@ -46,3 +46,4 @@ Thumbs.db
 /.vs/Pantheon/v15/.suo
 /src/Pantheon.UI/e2e
 /src/Pantheon.UI/node_modules
+/src/Pantheon.UI/dist

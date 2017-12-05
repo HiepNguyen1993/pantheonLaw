@@ -1,0 +1,8 @@
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\bin\Debug\netcoreapp2.0\Pantheon.AppService.deps.json
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\bin\Debug\netcoreapp2.0\Pantheon.AppService.dll
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.csproj.CoreCompileInputs.cache
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.AssemblyInfoInputs.cache
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.AssemblyInfo.cs
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\bin\Debug\netcoreapp2.0\Pantheon.AppService.pdb
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.dll
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.pdb

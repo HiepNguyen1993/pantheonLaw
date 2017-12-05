@@ -1,0 +1,111 @@
+﻿body {
+    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.846153846;
+}
+
+.nav-pills > li > a {
+    border-radius: 2px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #ffffff;
+    background-color: #0aa89e;
+}
+
+.form-control {
+    box-shadow: none !important;
+}
+
+.btn-primary.btn-flat, .btn-primary.btn-icon-toggle {
+    color: #0aa89e;
+}
+
+.btn.btn-flat {
+    padding: 4.5px 7px;
+}
+
+.btn-flat:hover, .btn-icon-toggle:hover, .btn-flat:focus, .btn-icon-toggle:focus, .open .dropdown-toggle.btn-flat, .open .dropdown-toggle.btn-icon-toggle {
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: inherit;
+}
+
+.note-editor {
+    margin: 0px;
+    border: none !important;
+    border-radius: 0px;
+}
+
+.btn:active, .btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.btn-flat:active, .btn-icon-toggle:active, .btn-flat.active, .btn-icon-toggle.active {
+    background-color: rgba(12, 12, 12, 0.25);
+    border-color: transparent !important;
+    color: #ffffff;
+}
+
+#blog .img-responsive {
+    height: 80px;
+    width: 80px;
+}
+
+#blog .blog-description {
+    max-height: 28px;
+    overflow-y: hidden;
+}
+
+#blog .blog-delete {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    cursor: pointer;
+    padding: 0px 4px;
+}
+
+#blog .blog-delete .md {
+    cursor: pointer;
+}
+
+#blog .blog-delete:hover {
+    background: #0aa89e;
+    cursor: default;
+    color: #ffffff;
+}
+
+#form-blog #contain-img {
+    height: 253px;
+    border: 1px dotted gray;
+    text-align: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#form-blog #lbl-select-image {
+    color: rgb(10, 168, 158);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: none;
+}
+
+#form-blog a {
+    text-decoration: none !important;
+}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
