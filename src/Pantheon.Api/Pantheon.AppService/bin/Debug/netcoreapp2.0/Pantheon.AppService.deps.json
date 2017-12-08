@@ -13,6 +13,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "Microsoft.AspNetCore": "2.0.1",
           "Microsoft.AspNetCore.Http": "2.0.1",
+          "MongoDB.Driver": "2.4.4",
           "log4net": "2.0.8",
           "mongocsharpdriver": "2.4.4"
         },
@@ -2066,7 +2067,7 @@
     "Microsoft.Extensions.Logging.Debug/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-29Zn5m9yb4NEP+qbeLl+7F2lDskDfrs8NbrM8eJ+k/pYE8JksRUEFxHp1bcpGSfGP9w0pMQMOKrVcwD3u5sPog==",
+      "sha512": "sha512-4U1DT+/DI4/W2oUpQ8527MeUjlzF/gPFqM87SahfK2pe8YtXuLOlsYLpUTY/LiiXl4zLoFlns+ZunexH7PqK7Q==",
       "path": "microsoft.extensions.logging.debug/2.0.0",
       "hashPath": "microsoft.extensions.logging.debug.2.0.0.nupkg.sha512"
     },

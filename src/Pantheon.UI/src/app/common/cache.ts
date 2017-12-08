@@ -1,10 +1,11 @@
 import { DateTimeUtil } from '../common/utilities';
 import { isArray } from 'lodash';
 import { EncryptionService } from '../shared/services/encryption.service';
+import { ApiConfig } from '../../config/api.config';
 
 export class Cache {
     public static _preffix = '__c_';
-    private static useCache = __appConfig__.cache;
+    private static useCache = ApiConfig.cache;
 
     public static setCache(name: string, data: any) {
         if (!this.useCache) { return; }
@@ -16,11 +17,11 @@ export class Cache {
     }
 
     public static getCache(name: string, callback: Function = null): any {
-        if (!this.useCache) { return null; };
+        if (!this.useCache) { return null; }
 
         const cacheObject: CacheObject = this.getCacheObject(name);
 
-        if (cacheObject === null) { return null; };
+        if (cacheObject === null) { return null; }
 
         const expireDate = new Date(cacheObject.expire);
         if (expireDate > new Date()) {

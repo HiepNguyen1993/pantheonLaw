@@ -6,3 +6,4 @@ D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netc
 D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\bin\Debug\netcoreapp2.0\Pantheon.AppService.pdb
 D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.dll
 D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.pdb
+D:\HTeam\LawProject\Pantheon\src\Pantheon.Api\Pantheon.AppService\obj\Debug\netcoreapp2.0\Pantheon.AppService.csprojResolveAssemblyReference.cache

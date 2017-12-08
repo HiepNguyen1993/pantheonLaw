@@ -62,8 +62,5 @@ function initialize() {
         return false;
     });
     console.log('init xyz');
-
-
-
     
 }
