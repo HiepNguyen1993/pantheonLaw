@@ -9,10 +9,7 @@ import { MainNavigatorComponent } from './pages/main-navigator/main-navigator.co
 import { FooterComponent } from './pages/footer/footer.component';
 import { CopyRightComponent } from './pages/copy-right/copy-right.component';
 import { FooterBreadcrumComponent } from './pages/footer-breadcrum/footer-breadcrum.component';
-
-
-
-
+import { TranslateService } from './translate/translate.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +26,9 @@ import { FooterBreadcrumComponent } from './pages/footer-breadcrum/footer-breadc
     RoutingDefined,
     SharedModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    TranslateService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

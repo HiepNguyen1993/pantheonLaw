@@ -47,3 +47,5 @@ Thumbs.db
 /src/Pantheon.UI/e2e
 /src/Pantheon.UI/node_modules
 /src/Pantheon.UI/dist
+/src/Pantheon.Api/Pantheon.Api/bin/Debug/netcoreapp2.0
+/src/Pantheon.Api/.vs/Pantheon.Api/v15/Server/sqlite3

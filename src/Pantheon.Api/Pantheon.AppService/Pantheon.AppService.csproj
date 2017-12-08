@@ -12,11 +12,13 @@
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.0.1" />
     <PackageReference Include="mongocsharpdriver" Version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\" />
     <Folder Include="Enum\" />
+    <Folder Include="ServiceContracts\Command\" />
+    <Folder Include="Services\Command\" />
     <Folder Include="Utilities\" />
   </ItemGroup>
 

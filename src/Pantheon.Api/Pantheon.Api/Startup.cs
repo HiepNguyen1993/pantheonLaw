@@ -6,14 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Pantheon.Api.Extensions;
 using Pantheon.Api.TokenAuthentication;
 using Pantheon.AppService;
 using Pantheon.AppService.Configuration;
-using Pantheon.Api.Utilities;
 
 namespace Pantheon.Api
 {
@@ -29,7 +27,6 @@ namespace Pantheon.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
             // Add service and create Policy with options
             services.AddCors(options => {
                 options.AddPolicy("AllowAll",
@@ -51,35 +48,43 @@ namespace Pantheon.Api
                 options.AddPolicy("AdminAdminRole", policy => policy.RequireClaim(CoreServiceConstants.IdentityClaims.IsAdmin));
             });
 
-            // Bind Settings from config file
-            services.Configure<TokenAuthSettings>(Configuration.GetSection("TokenAuthentication"));
-            services.Configure<WebCoreSettings>(Configuration.GetSection("WebCoreSettings"));
+            services.Configure<WebCoreSettings>(Configuration.GetSection("CoreSettings"));
 
-            // Adds a default in-memory implementation of IDistributedCache.
-            services.AddDistributedMemoryCache();
+            // configure identity server with in-memory stores, keys, clients and resources
+            services.AddIdentityServer()
+                .AddDeveloperSigningCredential()
+                .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
+                .AddInMemoryClients(IdentityServerConfig.GetClients());
 
-            services.AddSession(options =>
-            {
-                options.Cookie.Name = ".WebCore.Session";
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
-            });
+            MongoDBContext.ConnectionString = Configuration.GetSection("CoreSettings:ConnectionString").Value;
+            MongoDBContext.DatabaseName = Configuration.GetSection("CoreSettings:DatabaseName").Value;
+            MongoDBContext.IsSSL = Convert.ToBoolean(Configuration.GetSection("CoreSettings:IsSSL").Value);
+
+
 
             services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IServiceCollection services, IOptionsSnapshot<TokenAuthSettings> tokenSettings)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             // add CurrentRequestContextMiddleware.
             app.UseCurrentRequestContext();
-            app.UseSession();
+            //app.UseSession();
 
 
             // global policy - assign here or on each controller
             app.UseCors("AllowAll");
 
-            ConfigureAuth(app, services, tokenSettings.Value);//configure Token Authentication
+
             app.UseAuthenticateRequestMiddleware();
+
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseIdentityServer();
 
             app.UseMvcWithDefaultRoute();
         }
